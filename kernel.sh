@@ -52,3 +52,7 @@ dracut -f /boot/initramfs-4.14.49.img 4.14.49
 lsinitrd -k 4.14.49|grep mpt3sas
 
 #reboot
+
+
+#https://mirrors.edge.kernel.org/pub/linux/kernel/v4.x/
+# search  linux-4.14.49.tar.gz
