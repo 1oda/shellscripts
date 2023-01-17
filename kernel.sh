@@ -14,7 +14,9 @@ sed -i 's/GRUB_DEFAULT=.*/GRUB_DEFAULT=0/g' /etc/default/grub
 grub2-mkconfig -o $GRUB_CFG
 mv /boot/grub2/grubenv{,.bak}
 
+
 #saved_entry=CentOS Linux (3.10.0-1127.el7.x86_64) 7 (Core)
+
 
 #手动执行步骤
 awk -F\' '$1=="menuentry " {print $2}' /etc/grub2.cfg
